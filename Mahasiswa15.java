@@ -1,7 +1,4 @@
-import java.util.Scanner;
 public class Mahasiswa15 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner (System.in);
        
         String nama;
         String nim;
@@ -24,18 +21,17 @@ public class Mahasiswa15 {
                 ipk = ipkBaru;
             } else {
                 System.out.println("IPK tidak valid. Harus antara 0.0 dan 4.0");
-            }
-    
-        String nilaiKinerja() {
-            if (ipk >= 3.5) {
-                return "Kinerja sangat baik";
-            } else if (ipk >= 3.0) {
-                return "Kinerja baik";
-            } else if (ipk >= 2.0) {
-                return "Kinerja cukup";
-            } else {
-                return "Kinerja kurang";
-            }
+            }   
+        }
+    public String nilaiKinerja() {
+        if (ipk >= 3.5) {
+            return "Kinerja sangat baik";
+        } else if (ipk >= 3.0) {
+            return "Kinerja baik";
+        } else if (ipk >= 2.0) {
+            return "Kinerja cukup";
+        } else {
+            return "Kinerja kurang";
         }
     }
 }
